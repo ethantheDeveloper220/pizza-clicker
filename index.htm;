@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pizza Clicker</h1>
+    <div id="counter">Pizzas: <span id="pizza-count">0</span></div>
+    <img id="pizza" src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="Pizza">
+    <div id="upgrades">
+        <button class="upgrade-btn" id="auto-clicker">Buy Auto Clicker (Cost: 10 pizzas)</button>
+        <button class="upgrade-btn" id="multiplier">Buy Multiplier (Cost: 50 pizzas)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
