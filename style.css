@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff5e6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #d63031;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#game-container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#pizza-counter {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #2d3436;
+}
+
+#pizza-button {
+    font-size: 2em;
+    padding: 20px 40px;
+    margin: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ff7675;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.3s;
+}
+
+#pizza-button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+#pizza-button:active {
+    transform: scale(0.95);
+}
+
+#upgrades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.upgrade-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #74b9ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upgrade-button:hover {
+    background-color: #0984e3;
+}
+
+.upgrade-button:disabled {
+    background-color: #b2bec3;
+    cursor: not-allowed;
+}
+
+@keyframes pizzaSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#pizza {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#pizza:hover {
+    transform: scale(1.1);
+}
+
+#pizza:active {
+    transform: scale(0.9);
+}
